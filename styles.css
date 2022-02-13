@@ -1,3 +1,4 @@
+@import url('http://fonts.cdnfonts.com/css/harry-potter');
 
 body{
     padding: 0;
@@ -5,9 +6,14 @@ body{
     width:100vw;
     height: 100vh;    
     background-color: #2A623D;
+    font-family: 'Harry Potter', sans-serif;
+                                                
+}
+h1, h2{
+    text-align: center;
+    background-color: #2A623D;
 }
 .panel{
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -49,6 +55,7 @@ body{
     font-size: larger;
     background-color: #AAAAAA;
     border-radius: 25%;
+    font-family: 'Harry Potter', sans-serif;
 }
 .option:hover{
     background-color: #5D5D5D;
@@ -68,6 +75,7 @@ body{
     height: 8vh;
     padding: 5px;
     font-size: larger;
+    font-family: 'Harry Potter', sans-serif;
 }
 .evaluate{
     
@@ -76,4 +84,16 @@ body{
 .next{
     color: white;
     background-color: #2A623D;
+}
+.score{
+    font-size: large;
+    font-weight: bold;
+}
+
+#user-score{
+    color:#AAAAAA;
+}
+
+#total-score{
+    color:#5D5D5D;
 }

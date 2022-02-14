@@ -58,7 +58,27 @@ const Questions = [{
         { text: "Potter Drive", isCorrect: false }
     ]
 
-}
+},
+{
+    id: 6,
+    q: "Who was Harry's God Father?",
+    a: [{ text: "Sirius", isCorrect: true },
+        { text: "Dumbledore", isCorrect: false },
+        { text: "Remus", isCorrect: false },
+        { text: "Snape", isCorrect: false }
+    ]
+
+},
+{
+    id: 7,
+    q: "What shape does harry's Patronous take?",
+    a: [{ text: "Otter", isCorrect: false },
+        { text: "Dog", isCorrect: false },
+        { text: "Horse", isCorrect: false },
+        { text: "Stag", isCorrect: true }
+    ]
+
+},
 
 ]
 

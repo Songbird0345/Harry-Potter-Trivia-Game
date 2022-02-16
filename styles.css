@@ -56,10 +56,18 @@ h1, h2{
     background-color: #AAAAAA;
     border-radius: 25%;
     font-family: 'Harry Potter', sans-serif;
+    
 }
 .option:hover{
     background-color: #5D5D5D;
 }
+.option:active {
+    background-color: #2A623D;
+}
+.option:focus {
+    background-color: #2A623D;
+}
+
 .navigation{
     width: 80vw;
     height: 10vh;

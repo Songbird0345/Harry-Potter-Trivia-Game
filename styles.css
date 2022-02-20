@@ -27,6 +27,7 @@ h1, h2{
     background-color: #AAAAAA;
     font-size: x-large;
     text-align: center;
+    
       
 }
 .result{
@@ -68,40 +69,15 @@ h1, h2{
     background-color: #2A623D;
 }
 
-.navigation{
-    width: 80vw;
-    height: 10vh;
-    margin: 10px;
-    padding: 5px;
-    display: flex;
-    justify-content: space-around;
-    background-color:#AAAAAA;
-}
+
   
-.evaluate,.next{
-    width:30vw;
-    height: 8vh;
+.next{
+    width: 100px;
+    height: 75px;
     padding: 5px;
     font-size: larger;
     font-family: 'Harry Potter', sans-serif;
-}
-.evaluate{
-    
-    background-color: #2A623D;
-}
-.next{
     color: white;
     background-color: #2A623D;
 }
-.score{
-    font-size: large;
-    font-weight: bold;
-}
 
-#user-score{
-    color:#AAAAAA;
-}
-
-#total-score{
-    color:#5D5D5D;
-}

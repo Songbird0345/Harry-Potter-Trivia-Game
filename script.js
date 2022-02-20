@@ -80,6 +80,15 @@ const Questions = [{
     ]
 
 },
+{
+    id: 8,
+    q: "How did you Like the quiz?",
+    a: [{text: "Meh", isCorrect: true },
+        {text: "Good", isCorrect: true },
+        {text: "Great", isCorrect: true },
+        {text: "Awesome", isCorrect: true }
+    ]
+}
 
 ]
 
@@ -127,7 +136,7 @@ function iterate(id) {
         selected = op1.value;
         if (selected == "true") {
             result[0].innerHTML = "True";
-            result[0].style.color = "green";
+            result[0].style.color = "lightgreen";
         } else {
             result[0].innerHTML = "False";
             result[0].style.color = "red";
@@ -137,16 +146,37 @@ function iterate(id) {
     // Show selection for op2
     op2.addEventListener("click", () => {
         selected = op2.value;
+        if (selected == "true") {
+            result[0].innerHTML = "True";
+            result[0].style.color = "lightgreen";
+        } else {
+            result[0].innerHTML = "False";
+            result[0].style.color = "red";
+        }
     })
   
     // Show selection for op3
     op3.addEventListener("click", () => {
         selected = op3.value;
+        if (selected == "true") {
+            result[0].innerHTML = "True";
+            result[0].style.color = "lightgreen";
+        } else {
+            result[0].innerHTML = "False";
+            result[0].style.color = "red";
+        }
     })
   
     // Show selection for op4
     op4.addEventListener("click", () => {
         selected = op4.value;
+        if (selected == "true") {
+            result[0].innerHTML = "True";
+            result[0].style.color = "lightgreen";
+        } else {
+            result[0].innerHTML = "False";
+            result[0].style.color = "red";
+        }
     })
   
 

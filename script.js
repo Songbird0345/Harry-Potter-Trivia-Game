@@ -1,5 +1,5 @@
 
-// Questions for nerds from a nerd
+// Questions that will be asked
 const Questions = [{
     id: 0,
     q: "What is Harry's Middle Name?",
@@ -82,36 +82,38 @@ const Questions = [{
 },
 
 ]
- 
+
+// Set Start 
 var start = true;
 
+//Iterate 
 function iterate(id) {
   
-    // Julie! Do the thing (get the result)
+    // Getting the result display section
     var result = document.getElementsByClassName("result");
     result[0].innerText = "";
   
-    // Ask the question first stupid
+    // Getting the question
     const question = document.getElementById("question");
   
   
-    // Put the text in the button (thats what she said)
+    // Setting the question text
     question.innerText = Questions[id].q;
   
-    // Getting Options
+    // Getting the options
     const op1 = document.getElementById('op1');
     const op2 = document.getElementById('op2');
     const op3 = document.getElementById('op3');
     const op4 = document.getElementById('op4');
   
   
-    // Get the Text for options dumbass
+    // Providing option text 
     op1.innerText = Questions[id].a[0].text;
     op2.innerText = Questions[id].a[1].text;
     op3.innerText = Questions[id].a[2].text;
     op4.innerText = Questions[id].a[3].text;
   
-    // Is it true or false fucker
+    // Providing the true or false value to the options
     op1.value = Questions[id].a[0].isCorrect;
     op2.value = Questions[id].a[1].isCorrect;
     op3.value = Questions[id].a[2].isCorrect;
@@ -139,10 +141,10 @@ function iterate(id) {
         selected = op4.value;
     })
   
-    // Evaluate that button bitch
+    // Grabbing the evaluate button
     const evaluate = document.getElementsByClassName("evaluate");
   
-    // Evaluate method not meth head
+    // Evaluate method
     evaluate[0].addEventListener("click", () => {
         if (selected == "true") {
             result[0].innerHTML = "True";
@@ -152,13 +154,15 @@ function iterate(id) {
             result[0].style.color = "red";
         }
     })
+    
+    
 }
   
 if (start) {
     iterate("0");
 }
   
-// Next button and method self explanitory
+// Next button and method
 const next = document.getElementsByClassName('next')[0];
 var id = 0;
   
@@ -171,6 +175,8 @@ next.addEventListener("click", () => {
     }
   
 })
+
+
 
 
 

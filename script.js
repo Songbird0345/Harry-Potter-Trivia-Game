@@ -92,6 +92,7 @@ function iterate(id) {
     // Getting the result display section
     var result = document.getElementsByClassName("result");
     result[0].innerText = "";
+    
   
     // Getting the question
     const question = document.getElementById("question");
@@ -141,11 +142,9 @@ function iterate(id) {
         selected = op4.value;
     })
   
-    // Grabbing the evaluate button
-    const evaluate = document.getElementsByClassName("evaluate");
   
-    // Evaluate method
-    evaluate[0].addEventListener("click", () => {
+    // Get results upon click
+    result.isCorrect.addEventListener("click", () => {
         if (selected == "true") {
             result[0].innerHTML = "True";
             result[0].style.color = "lightgreen";
@@ -162,7 +161,7 @@ if (start) {
     iterate("0");
 }
   
-// Next button and method
+// Next button 
 const next = document.getElementsByClassName('next')[0];
 var id = 0;
   
@@ -173,7 +172,6 @@ next.addEventListener("click", () => {
         iterate(id);
         console.log(id);
     }
-  
 })
 
 

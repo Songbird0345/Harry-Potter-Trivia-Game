@@ -3,8 +3,7 @@
 body{
     padding: 0;
     margin: 0;    
-    width:100vw;
-    height: 100vh;    
+   
     background-color: #2A623D;
     font-family: 'Harry Potter', sans-serif;
                                                 
@@ -24,7 +23,7 @@ h1, h2{
     padding: 5px;
     width: 500px;
     height: 50px;
-    background-color: #AAAAAA;
+    background-color: #5D5D5D;
     font-size: x-large;
     text-align: center;
     
@@ -33,10 +32,11 @@ h1, h2{
 .result{
     margin: 10px;
     padding: 5px;
-    width:80vw;
+    width: 800pz;
     height: 10vh;
     text-align: center;
     font-size: 50px;
+    
       
 }
 .option-container{
@@ -44,23 +44,23 @@ h1, h2{
     justify-content: space-around; 
     margin: 10px;
     padding: 5px;
-    width: 80vw;
-    height: 20vh;
-    background-color: #AAAAAA;   
+    width: 750px;
+    height: 100px;
+    background-color: #5D5D5D;   
         
 }
 .option{    
-    padding: 10px;
-    width: 15vw;
-    height: 10vh;
+    padding: 5px;
+    width: 125px;
+    height: 100px;
     font-size: larger;
     background-color: #AAAAAA;
-    border-radius: 25%;
+    border-radius: 20%;
     font-family: 'Harry Potter', sans-serif;
     
 }
 .option:hover{
-    background-color: #5D5D5D;
+    background-color: #2A623D;
 }
 .option:active {
     background-color: #2A623D;
@@ -69,8 +69,6 @@ h1, h2{
     background-color: #2A623D;
 }
 
-
-  
 .next{
     width: 100px;
     height: 75px;
@@ -81,3 +79,6 @@ h1, h2{
     background-color: #2A623D;
 }
 
+
+
+/* Code that I gained the info from https://www.geeksforgeeks.org/how-to-create-a-simple-javascript-quiz/  */

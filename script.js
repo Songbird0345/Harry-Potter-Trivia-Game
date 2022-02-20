@@ -125,6 +125,13 @@ function iterate(id) {
     // Show selection for op1
     op1.addEventListener("click", () => {
         selected = op1.value;
+        if (selected == "true") {
+            result[0].innerHTML = "True";
+            result[0].style.color = "green";
+        } else {
+            result[0].innerHTML = "False";
+            result[0].style.color = "red";
+        }
     })
   
     // Show selection for op2
@@ -142,20 +149,10 @@ function iterate(id) {
         selected = op4.value;
     })
   
-  
-    // Get results upon click
-    result.isCorrect.addEventListener("click", () => {
-        if (selected == "true") {
-            result[0].innerHTML = "True";
-            result[0].style.color = "lightgreen";
-        } else {
-            result[0].innerHTML = "False";
-            result[0].style.color = "red";
-        }
-    })
-    
+
     
 }
+
   
 if (start) {
     iterate("0");
@@ -180,3 +177,4 @@ next.addEventListener("click", () => {
 
 
 
+// Code that I gained the info from https://www.geeksforgeeks.org/how-to-create-a-simple-javascript-quiz/
